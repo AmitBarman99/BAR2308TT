@@ -1,0 +1,39 @@
+*** SPICE deck for cell BAR2308TT_schematic{sch} from library BAR2308TT
+*** Created on Tue Aug 23, 2022 13:08:36
+*** Last revised on Wed Aug 24, 2022 00:25:36
+*** Written on Wed Aug 24, 2022 19:36:29 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: BAR2308TT_schematic{sch}
+Mnmos@0 Q A gnd gnd NMOS L=0.36U W=1.8U
+Mnmos@1 Q B gnd gnd NMOS L=0.36U W=1.8U
+Mnmos@2 P Q gnd gnd NMOS L=0.36U W=1.8U
+Mnmos@3 O A net@54 gnd NMOS L=0.36U W=1.8U
+Mnmos@4 net@54 B gnd gnd NMOS L=0.36U W=1.8U
+Mnmos@5 M O gnd gnd NMOS L=0.36U W=1.8U
+Mnmos@6 X Q gnd gnd NMOS L=0.36U W=1.8U
+Mnmos@7 X M gnd gnd NMOS L=0.36U W=1.8U
+Mnmos@8 W X gnd gnd NMOS L=0.36U W=1.8U
+Mnmos@9 gnd C N gnd NMOS L=0.36U W=1.8U
+Mpmos@0 vdd A net@2 vdd PMOS L=0.36U W=1.8U
+Mpmos@1 net@2 B Q vdd PMOS L=0.36U W=1.8U
+Mpmos@2 vdd Q P vdd PMOS L=0.36U W=1.8U
+Mpmos@3 vdd A O vdd PMOS L=0.36U W=1.8U
+Mpmos@4 vdd B O vdd PMOS L=0.36U W=1.8U
+Mpmos@5 vdd O M vdd PMOS L=0.36U W=1.8U
+Mpmos@6 vdd Q net@104 vdd PMOS L=0.36U W=1.8U
+Mpmos@7 net@104 M X vdd PMOS L=0.36U W=1.8U
+Mpmos@8 vdd X W vdd PMOS L=0.36U W=1.8U
+Mpmos@9 N C vdd vdd PMOS L=0.36U W=1.8U
+
+* Spice Code nodes in cell cell 'BAR2308TT_schematic{sch}'
+vdd vdd 0 DC 5
+va A 0 pulse 5 0 0 100n 100n 2u 4u
+vb B 0 pulse 5 0 0 100n 100n 2u 3u
+vc C 0 pulse 5 0 0 100n 100n 1u 2u
+.trans 10u
+.include D:\Electric\projects\C5_models.txt
+.END

@@ -1,0 +1,37 @@
+*** SPICE deck for cell BAR2308TT_layout{lay} from library BAR2308TT
+*** Created on Tue Aug 23, 2022 14:12:03
+*** Last revised on Wed Aug 24, 2022 00:14:28
+*** Written on Wed Aug 24, 2022 19:36:58 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: BAR2308TT_layout{lay}
+Mnmos@0 gnd A Q gnd NMOS L=0.36U W=1.8U AS=1.89P AD=5.166P PS=4.5U PD=13.98U
+Mnmos@1 Q B gnd gnd NMOS L=0.36U W=1.8U AS=5.166P AD=1.89P PS=13.98U PD=4.5U
+Mnmos@2 P Q gnd gnd NMOS L=0.36U W=1.8U AS=5.166P AD=2.43P PS=13.98U PD=6.3U
+Mnmos@3 O A net@46 gnd NMOS L=0.36U W=1.8U AS=0.972P AD=1.89P PS=2.88U PD=4.5U
+Mnmos@4 net@46 B gnd gnd NMOS L=0.36U W=1.8U AS=5.166P AD=0.972P PS=13.98U PD=2.88U
+Mnmos@5 M O gnd gnd NMOS L=0.36U W=1.8U AS=5.166P AD=2.43P PS=13.98U PD=6.3U
+Mnmos@6 gnd Q X gnd NMOS L=0.36U W=1.8U AS=1.89P AD=5.166P PS=4.5U PD=13.98U
+Mnmos@7 X M gnd gnd NMOS L=0.36U W=1.8U AS=5.166P AD=1.89P PS=13.98U PD=4.5U
+Mnmos@8 W X gnd gnd NMOS L=0.36U W=1.8U AS=5.166P AD=2.43P PS=13.98U PD=6.3U
+Mnmos@9 N C gnd gnd NMOS L=0.36U W=1.8U AS=5.166P AD=2.43P PS=13.98U PD=6.3U
+Mpmos@0 vdd A net@18 vdd PMOS L=0.36U W=1.8U AS=0.972P AD=5.832P PS=2.88U PD=14.49U
+Mpmos@1 net@18 B Q vdd PMOS L=0.36U W=1.8U AS=1.89P AD=0.972P PS=4.5U PD=2.88U
+Mpmos@2 vdd Q P vdd PMOS L=0.36U W=1.8U AS=2.43P AD=5.832P PS=6.3U PD=14.49U
+Mpmos@3 vdd A O vdd PMOS L=0.36U W=1.8U AS=1.89P AD=5.832P PS=4.5U PD=14.49U
+Mpmos@4 O B vdd vdd PMOS L=0.36U W=1.8U AS=5.832P AD=1.89P PS=14.49U PD=4.5U
+Mpmos@5 vdd O M vdd PMOS L=0.36U W=1.8U AS=2.43P AD=5.832P PS=6.3U PD=14.49U
+Mpmos@6 vdd Q net@120 vdd PMOS L=0.36U W=1.8U AS=0.972P AD=5.832P PS=2.88U PD=14.49U
+Mpmos@7 net@120 M X vdd PMOS L=0.36U W=1.8U AS=1.89P AD=0.972P PS=4.5U PD=2.88U
+Mpmos@8 vdd X W vdd PMOS L=0.36U W=1.8U AS=2.43P AD=5.832P PS=6.3U PD=14.49U
+Mpmos@10 vdd C N vdd PMOS L=0.36U W=1.8U AS=2.43P AD=5.832P PS=6.3U PD=14.49U
+
+* Spice Code nodes in cell cell 'BAR2308TT_layout{lay}'
+vdd vdd 0 DC 5
+va A 0 pulse 5 0 0 100n 100n 2u 4u
+vb B 0 pulse 5 0 0 100n 100n 2u 3u
+vc C 0 pulse 5 0 0 100n 100n 1u 2u
+.trans 10u
+.include D:\Electric\projects\C5_models.txt
+.END
