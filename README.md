@@ -15,7 +15,10 @@ A SSI IC that will give us outputs of all the Logic gates
 [See Details](./box/Bar2308tt_presentation.pdf)
 
 
-## [See the license](./LICENSE.md)
+## 🛡️ License
+
+BAR2308TT is licensed under MIT license. 
+[See the license](./LICENSE.md)
 
 ## All the best
 
