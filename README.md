@@ -11,17 +11,43 @@ A SSI Digital IC that will give us outputs of all the Logic gates.This design is
 
 ![OR](./box/Bar2308tt_presentation/Bar2308tt_presentation-006.jpg)
 
+| **A** | **B** | **P** | **VDD** | **GND** | **o/p** |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 5V | 0V | 0.7V |
+| 0 | 1 | 1 | 5V | 0V | 5V |
+| 1 | 0 | 1 | 5V | 0V | 5V |
+| 1 | 1 | 1 | 5V | 0V | 5V |
+
 ## 2. Use as AND gate
 
 ![AND](./box/Bar2308tt_presentation/Bar2308tt_presentation-008.jpg)
+
+| **A** | **B** | **M** | **VDD** | **GND** | **o/p** |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 5V | 0V | 0.7V |
+| 0 | 1 | 0 | 5V | 0V | 0.7V |
+| 1 | 0 | 0 | 5V | 0V | 0.7V |
+| 1 | 1 | 1 | 5V | 0V | 5V |
 
 ## 3. Use as NOT gate
 
 ![NOT](./box/Bar2308tt_presentation/Bar2308tt_presentation-010.jpg)
 
+| **C** | **N** | **VDD** | **GND** | **o/p** |
+| --- | --- | --- | --- | --- |
+| 0 | 1 | 5V | 0V | 5V |
+| 1 | 0 | 5V | 0V | 0.7V |
+
 ## 4. **Use as NOR gate**
 
 ![NOR](./box/Bar2308tt_presentation/Bar2308tt_presentation-012.jpg)
+
+| **A** | **B** | **Q** | **VDD** | **GND** | **o/p** |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 1 | 5V | 0V | 5V |
+| 0 | 1 | 0 | 5V | 0V | 0.7V |
+| 1 | 0 | 0 | 5V | 0V | 0.7V |
+| 1 | 1 | 0 | 5V | 0V | 0.7V |
 
 ## 5. Use as NAND gate
 
