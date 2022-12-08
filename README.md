@@ -38,6 +38,13 @@ A SSI Digital IC that will give us outputs of all the Logic gates
 [See Details](./box/Bar2308tt_presentation.pdf)
 
 
+# Integrated Circuit's Layout
+![layout](./box/BAR2308TT-layout.png)
+## Integrated Circuit's Icon view
+![icon](./box/BAR2308TT_icon_png.png)
+## Simulation results
+![simulation](./BAR2308TT-graph.png)
+
 ## 🛡️ License
 
 BAR2308TT is licensed under MIT license. 
