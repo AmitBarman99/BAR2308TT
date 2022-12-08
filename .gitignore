@@ -1,0 +1,7 @@
+# box/bar2308tt.wrl
+*.wrl
+*.dxf
+
+box/bar2308tt_presentation/
+
+################### Added all 3D model into .gitignore because i am working on this
