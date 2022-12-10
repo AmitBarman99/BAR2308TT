@@ -13,7 +13,7 @@ A SSI Digital IC that will give us outputs of all the Logic gates.This design is
 
 | **A** | **B** | **P** | **VDD** | **GND** | **o/p** |
 | --- | --- | --- | --- | --- | --- |
-| 0 | 0 | 0 | 5V | 0V | 0.7V |
+| 0 | 0 | 0 | 5V | 0V | 0V |
 | 0 | 1 | 1 | 5V | 0V | 5V |
 | 1 | 0 | 1 | 5V | 0V | 5V |
 | 1 | 1 | 1 | 5V | 0V | 5V |
@@ -24,9 +24,9 @@ A SSI Digital IC that will give us outputs of all the Logic gates.This design is
 
 | **A** | **B** | **M** | **VDD** | **GND** | **o/p** |
 | --- | --- | --- | --- | --- | --- |
-| 0 | 0 | 0 | 5V | 0V | 0.7V |
-| 0 | 1 | 0 | 5V | 0V | 0.7V |
-| 1 | 0 | 0 | 5V | 0V | 0.7V |
+| 0 | 0 | 0 | 5V | 0V | 0V |
+| 0 | 1 | 0 | 5V | 0V | 0V |
+| 1 | 0 | 0 | 5V | 0V | 0V |
 | 1 | 1 | 1 | 5V | 0V | 5V |
 
 ## 3. Use as NOT gate
@@ -36,7 +36,7 @@ A SSI Digital IC that will give us outputs of all the Logic gates.This design is
 | **C** | **N** | **VDD** | **GND** | **o/p** |
 | --- | --- | --- | --- | --- |
 | 0 | 1 | 5V | 0V | 5V |
-| 1 | 0 | 5V | 0V | 0.7V |
+| 1 | 0 | 5V | 0V | 0V |
 
 ## 4. **Use as NOR gate**
 
@@ -45,25 +45,57 @@ A SSI Digital IC that will give us outputs of all the Logic gates.This design is
 | **A** | **B** | **Q** | **VDD** | **GND** | **o/p** |
 | --- | --- | --- | --- | --- | --- |
 | 0 | 0 | 1 | 5V | 0V | 5V |
-| 0 | 1 | 0 | 5V | 0V | 0.7V |
-| 1 | 0 | 0 | 5V | 0V | 0.7V |
-| 1 | 1 | 0 | 5V | 0V | 0.7V |
+| 0 | 1 | 0 | 5V | 0V | 0V |
+| 1 | 0 | 0 | 5V | 0V | 0V |
+| 1 | 1 | 0 | 5V | 0V | 0V |
 
 ## 5. Use as NAND gate
 
 ![NAND](./box/Bar2308tt_presentation/Bar2308tt_presentation-014.jpg)
 
+| **A** | **B** | **O** | **VDD** | **GND** | **o/p** |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 1 | 5V | 0V | 5V |
+| 0 | 1 | 1 | 5V | 0V | 5V |
+| 1 | 0 | 1 | 5V | 0V | 5V |
+| 1 | 1 | 0 | 5V | 0V | 0V |
+
+
 ## 6. Use as XOR gate
 
 ![XOR](./box/Bar2308tt_presentation/Bar2308tt_presentation-016.jpg)
+
+| **A** | **B** | **X** | **VDD** | **GND** | **o/p** |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 5V | 0V | 0V |
+| 0 | 1 | 1 | 5V | 0V | 5V |
+| 1 | 0 | 1 | 5V | 0V | 5V |
+| 1 | 1 | 0 | 5V | 0V | 0V |
+
 
 ## 7. Use as XNOR gate
 
 ![XNOR](./box/Bar2308tt_presentation/Bar2308tt_presentation-018.jpg)
 
+| **A** | **B** | **W** | **VDD** | **GND** | **o/p** |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 1 | 5V | 0V | 5V |
+| 0 | 1 | 0 | 5V | 0V | 0V |
+| 1 | 0 | 0 | 5V | 0V | 0V |
+| 1 | 1 | 1 | 5V | 0V | 5V |
+
+
 ## 8. Use as Half-adder
 
 ![Half-adder](./box/Bar2308tt_presentation/Bar2308tt_presentation-020.jpg)
+
+| **A** | **B** | **X(sum)** | **M(carry)** | **VDD** | **GND** | **o/p(X)** | **o/p(M)** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 | 5V | 0V | 0V | 0V |
+| 0 | 1 | 1 | 0 | 5V | 0V | 5V | 0V |
+| 1 | 0 | 1 | 0 | 5V | 0V | 5V | 0V |
+| 1 | 1 | 0 | 1 | 5V | 0V | 0V | 5V |
+
 
 [See Details](./box/Bar2308tt_presentation.pdf)
 
@@ -83,6 +115,8 @@ vc C 0 pulse 5 0 0 100n 100n 1u 2u
 .trans 10u
 .include D:\Electric\projects\C5_models.txt
 ```
+
+>> I am working on it for 3D rendering.
 
 ## 🛡️ License
 
